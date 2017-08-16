@@ -49,6 +49,9 @@ The [original code for the Pi Switch](https://www.pi-supply.com/pi-supply-switch
 ## Raspbian shows under-voltage warnings
 The problem can be solved by using shorter, thicker USB cables. With Pi Switch we are now shipping 30cm 22AWG USB cables which solve the problem entirely.
 
+## Add logging lines to softshut.py so that a message is posted to /var/log/messages when the switch is used to shutdown the Pi.
+## uses same call method as shutdown / reboot.
+
 ## How do I know if the service is running properly?
 Run the following command
 ```bash
