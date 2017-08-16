@@ -46,6 +46,8 @@ A [text guide](https://www.pi-supply.com/pi-supply-switch-v1-1-assembly-instruct
 ## I am still running Wheezy where can I find compatible code?
 The [original code for the Pi Switch](https://www.pi-supply.com/pi-supply-switch-v1-1-code-examples/) can be found on our website.
 
+## Added calls to logger in softshut.py to send messages to /var/log/messages when rebooted or shutdown with switch.
+
 ## Raspbian shows under-voltage warnings
 The problem can be solved by using shorter, thicker USB cables. With Pi Switch we are now shipping 30cm 22AWG USB cables which solve the problem entirely.
 
