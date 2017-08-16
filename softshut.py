@@ -21,6 +21,8 @@ sleep(2); # Sleep 2s to distinguish a long press from a short press
 
 if (GPIO.input(PinSeven) == False):
  GPIO.output(PinEight,0) # Bring down PinEight so that the capacitor can discharge and remove power to the Pi
+ call(['logger', '-s', '"Initiating OS PowerOff via PiSwitch"'])
  call('poweroff', shell=False) # Initiate OS Poweroff
 else:
+ call(['logger', '-s', '"Initiating OS Reboot via PiSwitch"'])   
  call('reboot', shell=False) # Initiate OS Reboot
